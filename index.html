@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Time/Off</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Raleway:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="styles.css">
+
+  <script src="https://kit.fontawesome.com/cb97e06f0c.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <!--   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+  <!--   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+</head>
+<body>
+  <!-- SHOPPING CART -->
+  <section>
+    <div class="container-fluid">
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="dark-green-txt offcanvas-title" id="offcanvasNavbarLabel">Shopping Cart</h5>
+          <button type="button" class="btn-close text-reset cart-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div class="cart-item">
+            <img src="images/optimized/sachet.jpg">
+            <div class="dark-green-txt cart-details">
+              <p>Daily Matcha Box</p>
+              <p>$80</p>
+              <div class="quantity buttons_added">
+                <input type="button" value="-" class="minus"><input type="number" step="1" min="1" max="" name="quantity" value="1" title="Qty" class="input-text qty-num text" size="4" pattern="" inputmode=""><input type="button" value="+" class="plus">
+              </div>
+              <a href="">Remove</a>
+            </div>
+          </div>
+          <div class="cart-item">
+            <img src="images/optimized/full_pack.jpg">
+            <div class="dark-green-txt cart-details">
+              <p>Daily Matcha Box</p>
+              <p>$80</p>
+              <div class="quantity buttons_added">
+                <input type="button" value="-" class="minus"><input type="number" step="1" min="1" max="" name="quantity" value="1" title="Qty" class="input-text qty-num text" size="4" pattern="" inputmode=""><input type="button" value="+" class="plus">
+              </div>
+              <a href="">Remove</a>
+            </div>
+          </div>
+          <div class="shipping">
+            <p>Shipping & discount <br> calculated at the next step</p>
+            <div class="subtotal">
+              <p>SUBTOTAL</p>
+              <p>$175.00</p>
+            </div>
+            <button class="btn btn-cart dark-green-bgd">Continue to checkout</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- nav -->
+    <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="mx-auto navbar-brand" href=""><img src="" alt=""></a>
+        <img type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" class="hide-link cart-icon" src="images/icons/cart-icon.png" alt="">
+        <div class="collapse navbar-collapse px-3" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active hide-link">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Shop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Learn</a>
+            </li>
+            <li class="nav-item hide-link">
+              <a class="nav-link" href="#">My Account</a>
+            </li>
+            <li class="nav-item hide-link">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <img type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" class="show-icon cart-icon" src="images/icons/cart-icon.png" alt="">
+    </nav>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header dark-green-bgd">
+            <div class="header-text">
+             <img src="images/icons/white-checkmark.svg">
+             <h5 class="modal-title" id="exampleModalLabel">Item added to cart</h5>
+           </div>
+           <button type="button" class="btn-close" data-bs-dismiss="modals" aria-label="Close"></button>
+         </div>
+         <div class="modal-body">
+          <img src="images/optimized/full_pack.jpg">
+          <div class="modal-details">
+            <div class="top-details">
+              <p class="dark-green-txt">Daily Matcha Box</p>
+              <p class="qty">QTY <span>1</span></p>
+            </div>
+            <div class="dark-green-txt btm-details">
+              <p>SUBTOTAL</p>
+              <p>$80.00</p>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-checkout" data-bs-dismiss="modals">View Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="product-section dark-green-bgd">
+    <div class="product-header white">
+      <h3>Matcha Tea</h3>
+      <p>Take a break and relax with our finely milled, hand packed, and organically grown matcha sourced from Vancouver, B.C.</p>
+    </div>
+    <div class="product-grid">
+      <div class="product-box">
+        <div class="matcha card text-white">
+          <img src="images/optimized/full_pack.jpg" class="card-img" alt="...">
+          <div class="card-img-overlay">
+            <h5 class="card-title">So Matcha Time</h5>
+          </div>
+          <div class="product-details">
+            <p>$95</p>
+            <img type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="add-btn" src="images/icons/white-add-btn.svg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="product-box">
+        <div class="matcha card text-white">
+          <img src="images/optimized/sachet.jpg" class="card-img" alt="...">
+          <div class="card-img-overlay">
+            <h5 class="card-title">Dailiy Matcha Box</h5>
+          </div>
+          <div class="product-details">
+            <p>$80</p>
+            <img class="add-btn" src="images/icons/white-add-btn.svg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="product-section white-bgd">
+    <div class="product-header dark-green-txt">
+      <h3>Matcha made in heaven</h3>
+      <p>There's no right way, just the right tools. Pair your matcha withour handmade wooden accessories to step-up your matcha game.</p>
+    </div>
+    <div class="product-grid">
+      <div class="product-box">
+        <div class="dark-green-bgd card text-white">
+          <img src="images/optimized/chasen_chawan.jpg" class="card-img" alt="...">
+          <div class="card-img-overlay">
+            <h5 class="card-title">Chawan + Chasen Set</h5>
+          </div>
+          <div class="product-details">
+            <p>$40</p>
+            <img class="add-btn" src="images/icons/white-add-btn.svg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="product-box">
+        <div class="dark-green-bgd card text-white">
+          <img src="images/optimized/sachet.jpg" class="card-img" alt="...">
+          <div class="card-img-overlay">
+            <h5 class="card-title">Chasen</h5>
+          </div>
+          <div class="product-details">
+            <p>$25</p>
+            <img class="add-btn" src="images/icons/white-add-btn.svg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="product-box">
+        <div class="dark-green-bgd card text-white">
+          <img src="images/optimized/chasen-optimized.jpg" class="card-img" alt="...">
+          <div class="card-img-overlay">
+            <h5 class="card-title">Chawan</h5>
+          </div>
+          <div class="product-details">
+            <p>$25</p>
+            <img class="add-btn" src="images/icons/white-add-btn.svg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="product-box">
+        <div class="dark-green-bgd card text-white">
+          <img src="images/optimized/sachet_chawan.jpg" class="card-img sold-out" alt="...">
+          <div class="card-img-overlay soldout">
+            <h5 class="card-title">Perfect Matcha Set</h5>
+            <div class="sold-out-details">
+              <p>Sold Out</p>
+              <a href="#">email me when available</a>
+            </div>
+          </div>
+          <div class="product-details">
+            <p>$100</p>
+            <img class="add-btn" src="images/icons/white-add-btn.svg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq dark-green-bgd">
+    <div class="accordion" id="accordionExample">
+      <h3 class="white">FAQ</h3>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button"  data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            What are the best ways to incorporate Matcha into my daily routine?
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button"  data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            How quickly should I expect to see results from Matcha?
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            Are your ingredients clinically tested?s
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="faq-email">
+      <p>Have another question in mind?</p>
+      <button type="button" class="btn">Email us</button>
+    </div>
+  </section>
+  <footer>
+    <div class="email-sub">
+      <p class="dark-green-txt">Stay in the loop</p>
+      <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="Email address" aria-label="Recipient's username" aria-describedby="button-addon2">
+        <button class="btn btn-outline-secondary" type="button" id="button-addon2">send</button>
+      </div>
+    </div>
+    <div class="footer-links">
+      <div class="link-box">
+        <p>Shop</p>
+        <a href="#">So Matcha Time</a>
+        <a href="#">Daily Matcha</a>
+        <a href="#">Perfect Matcha Set</a>
+      </div>
+      <div class="link-box">
+        <p>Learn</p>
+        <a href="#">About</a>
+        <a href="#">Sustainability</a>
+      </div>
+      <div class="link-box">
+        <p>Connect</p>
+        <a href="#">Instagram</a>
+        <a href="#">Twitter</a>
+      </div>
+      <div class="link-box">
+        <p>Support</p>
+        <a href="#">My Account</a>
+        <a href="#">Shipping + Billing</a>
+      </div>
+      <div class="link-box">
+        <p>Contact</p>
+        <a href="#">support@timeoffmatcha.com</a>
+        <a href="#">(778)-829-2984a</a>
+      </div>
+    </div>
+    <div class="credit">
+      <div class="terms">
+        <a href="#">Terms of use</a>
+        <a href="#">Privacy Notice</a>
+      </div>
+      <p>&copy;	2021 time/off All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script type="text/javascript">
+    function wcqib_refresh_quantity_increments() {
+      jQuery("div.quantity:not(.buttons_added), td.quantity:not(.buttons_added)").each(function(a, b) {
+        var c = jQuery(b);
+        c.addClass("buttons_added"), c.children().first().before('<input type="button" value="-" class="minus" />'), c.children().last().after('<input type="button" value="+" class="plus" />')
+      })
+    }
+    String.prototype.getDecimals || (String.prototype.getDecimals = function() {
+      var a = this,
+      b = ("" + a).match(/(?:\.(\d+))?(?:[eE]([+-]?\d+))?$/);
+      return b ? Math.max(0, (b[1] ? b[1].length : 0) - (b[2] ? +b[2] : 0)) : 0
+    }), jQuery(document).ready(function() {
+      wcqib_refresh_quantity_increments()
+    }), jQuery(document).on("updated_wc_div", function() {
+      wcqib_refresh_quantity_increments()
+    }), jQuery(document).on("click", ".plus, .minus", function() {
+      var a = jQuery(this).closest(".quantity").find(".qty-num"),
+      b = parseFloat(a.val()),
+      c = parseFloat(a.attr("max")),
+      d = parseFloat(a.attr("min")),
+      e = a.attr("step");
+      b && "" !== b && "NaN" !== b || (b = 0), "" !== c && "NaN" !== c || (c = ""), "" !== d && "NaN" !== d || (d = 0), "any" !== e && "" !== e && void 0 !== e && "NaN" !== parseFloat(e) || (e = 1), jQuery(this).is(".plus") ? c && b >= c ? a.val(c) : a.val((b + parseFloat(e)).toFixed(e.getDecimals())) : d && b <= d ? a.val(d) : b > 0 && a.val((b - parseFloat(e)).toFixed(e.getDecimals())), a.trigger("change")
+    });
+  </script>
+</body>
+
+</html>

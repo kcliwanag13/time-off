@@ -173,7 +173,7 @@ h4, h5, p {
 .card-img {
   height: 410px;
   width: 318px;
-  object-fit: fill;
+  object-fit: cover;
   border-radius: 0;
 }
 
@@ -326,12 +326,14 @@ h4, h5, p {
   border: 1px solid white;
   color: white;
   width: 151px;
+
+  font-weight: 500;
 }
 
 .faq-email button:hover {
-  background: #AABA79;
-  border: 1px solid #AABA79;
-  color: white;
+  background: white;
+  border: 1px solid white;
+  color: #505F2E;
 }
 
 @media (min-width: 834px) {
